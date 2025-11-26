@@ -1,3 +1,5 @@
+# This .gitignore file should be placed at the root of your Unity project directory
+
 # ---------------------------------------------
 # Unity Generated Files (Essential Ignores)
 # ---------------------------------------------
@@ -17,6 +19,14 @@
 *.mdb.meta
 sysinfo.txt
 *.user
+
+# SHADER FILES AND COMPILER OUTPUT (Excluding 20,000 files)
+*.shader
+*.shader.meta
+*.cginc
+*.cginc.meta
+*.compute
+*.compute.meta
 
 # Large files that should not be tracked
 /[Mm]emoryCaptures/
@@ -57,12 +67,12 @@ crashlytics-build.properties
 # ---------------------------------------------
 
 # Unity ML-Agents: Training checkpoints, ONNX models, and log files
-[Aa]ssets/[Mm]l-[Aa]gents/
-[Aa]ssets/[Mm]l[Aa]gents/
-[Aa]ssets/[Mm]l[Aa]gents[Dd]ata/
-[Aa]ssets/*TrainingData*
-[Aa]ssets/*Model*
-[Aa]ssets/*ONNX*
+/[Aa]ssets/[Mm]l-[Aa]gents/
+/[Aa]ssets/[Mm]l[Aa]gents/
+/[Aa]ssets/[Mm]l[Aa]gents[Dd]ata/
+/[Aa]ssets/*TrainingData*
+/[Aa]ssets/*Model*
+/[Aa]ssets/*ONNX*
 
 # Folders for local model cache/downloads (e.g., if using Ollama or external SDKs)
 /LocalCache/
